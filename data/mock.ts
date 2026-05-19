@@ -120,6 +120,7 @@ export const moodRecords: MoodRecord[] = [
   },
 ];
 
+// 心情选项（与 MoodBadge 严格对应）
 export const moodOptions = [
   { key: "angry", label: "愤怒", emoji: "😠" },
   { key: "sad", label: "难过", emoji: "😢" },
@@ -128,6 +129,7 @@ export const moodOptions = [
   { key: "excited", label: "激动", emoji: "🤩" },
 ];
 
+// 陪伴选项
 export const companyOptions = [
   { key: "alone", label: "独自一人" },
   { key: "friends", label: "和朋友们" },
@@ -136,6 +138,7 @@ export const companyOptions = [
   { key: "colleagues", label: "和同事" },
 ];
 
+// 活动分类
 export const categoryOptions = [
   { key: "all", label: "全部" },
   { key: "indoor", label: "室内" },
@@ -144,6 +147,7 @@ export const categoryOptions = [
   { key: "alone", label: "独处" },
 ];
 
+// 偏好分类
 export const preferenceCategories = [
   {
     id: "1",
@@ -163,6 +167,7 @@ export const preferenceCategories = [
   },
 ];
 
+// 一周心情统计
 export const weeklyMoods = [
   { day: "周一", mood: "happy", level: "高" },
   { day: "周二", mood: "neutral", level: "中" },
