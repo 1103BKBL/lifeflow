@@ -15,7 +15,9 @@
   box-sizing: border-box;
 }
 
-html, body, #root {
+html,
+body,
+#root {
   height: 100%;
   width: 100%;
 }
@@ -28,36 +30,35 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* 滚动条美化 */
 ::-webkit-scrollbar {
   width: 4px;
   height: 4px;
 }
-
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
-
 ::-webkit-scrollbar-thumb {
   background: #c1c1c1;
   border-radius: 2px;
 }
-
 ::-webkit-scrollbar-thumb:hover {
   background: #a1a1a1;
 }
 
+/* Tailwind 自定义工具类 */
 @layer utilities {
   .safe-area-bottom {
     padding-bottom: env(safe-area-inset-bottom);
   }
-  
+
   .text-gradient {
     background: linear-gradient(135deg, #5d5dff 0%, #e44dff 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
-  
+
   .bg-gradient-primary {
     background: linear-gradient(135deg, #5d5dff 0%, #e44dff 100%);
   }
